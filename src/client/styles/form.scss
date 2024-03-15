@@ -1,0 +1,32 @@
+#submission-box {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 50px;
+    font-size: 20px; 
+    border-radius: 12px;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#submission-box form {
+    width: 100%;
+    display:block
+}
+
+#submission-box button {
+    width: 100%;
+    margin-top: 10px;
+    height: 5vh;
+}
+
+#submission-box input {
+    height: 5vh;
+    width: 100%;
+    padding-left: 1vw;
+}
+
+#message {
+    font-size: 0.75rem;
+    color: red;
+    display:block
+}

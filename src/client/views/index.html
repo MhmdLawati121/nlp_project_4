@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="">Logo</div>
+      <div class="">navigation</div>
+    </header>
+
+    <main>
+      <div id="submission-box">
+        <form id="submit-url" onsubmit="return Client.handleSubmit(event)">
+          <input type="text" name="url" id="url" />
+          <button type="submit">press to test</button>
+        </form>
+      </div>
+      <span id="message"></span>
+      <div id="results-box">
+        <div id="polarity-box">
+          <p>Polarity:</p>
+          <p id="polarity"></p>
+        </div>
+        <div id="subjectivity-box">
+          <p>Subjectivity:</p>
+          <p id="subjectivity"></p>
+        </div>
+        <div id="text-box">
+          <p>Text:</p>
+          <p id="text"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>This is a footer</p>
+    </footer>
+    <script>
+      /* service worker script */
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>
