@@ -18,3 +18,8 @@ This project makes use of the meaningcloud sentiment analysis API to analyse an 
 - To enable service workers, run the command `npm run build-prod`
 - Navigate to localhost:8000 to view the page.
 - Type in your article's URL to view the result.
+
+## Notes
+
+- Meaningcloud's free version API has a limited number of uses, check returned status code if the website is not functioning as it should be as the number of uses may have been exceeded.
+- This project is a part of Udacity's Front-End Development Nanodegree course. The original template code can be found on Udacity's Github page.
